@@ -1,0 +1,234 @@
+﻿<!-- CA Gen Generated makefile for assemble.EAR -->
+<!-- Copyright (C) 2016 CA. All rights reserved. -->
+<project name="assemble.EAR"
+         default="all"
+         basedir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\">
+<taskdef name="gzip" classname="com.ca.gen.bt.tasks.GZip"/>
+<taskdef name="manifest" classname="com.ca.gen.bt.tasks.Manifest"/>
+<taskdef name="parsewsdl" classname="com.ca.gen.bt.tasks.ParseWSDL"/>
+<taskdef name="routerFormatter" classname="com.ca.gen.bt.tasks.RouterFormatter"/>
+<taskdef name="webxml" classname="com.ca.gen.bt.tasks.WebXml"/>
+<taskdef name="fileexists" classname="com.ca.gen.bt.tasks.FileExists"/>
+<target name="all" depends="dirs,assemble" />
+<target name="dirs">
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/META-INF"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/WEB-INF"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp/css"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp/images"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/genfilestemp"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/additionalfilestemp"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/wvpath"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/wvpath/webviewrt"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\../WebViewUI"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\Web Services/temp"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\Web Services/temp/META-INF"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\Web Services/temp/WEB-INF"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\Web Services/temp/WEB-INF/lib"/>
+</target>
+<target name="assemble" depends="
+                               manifest,
+                               verify,
+                               assemble.war,
+                               application.xml,
+                               runtime,
+                               assemble.ear,
+                               cleanup"/>
+<target name="manifest">
+   <!-- CAL manifest.mf -->
+   <echo message="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj CAL Creating CAL manifest.mf"/>
+   <echo message=""/>
+   <echo message="...Creating CAL manifest.mf "/>
+   <delete file="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/META-INF/MANIFEST.MF"
+           quiet="true"/>
+   <manifest dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/META-INF"
+             libraries="
+                         genrt.jar,
+                       "/>
+</target>
+<target name="application.xml">
+   <!-- CAL application.xml -->
+   <echo message="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj CAL Creating CAL application.xml"/>
+   <echo message=""/>
+   <echo message="...Creating CAL application.xml "/>
+   <delete file="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/META-INF/application.xml" quiet="true"/>
+   <echo file="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/META-INF/application.xml" encoding="UTF-8"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<application version="5"
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd">
+
+  <description>CALCULAT J2EE application</description>
+  <display-name>CALCULAT</display-name>
+  <module>
+    <web>
+      <web-uri>CAL.war</web-uri>
+      <context-root>CAL</context-root>
+    </web>
+  </module>
+</application>]]>
+   </echo>
+</target>
+<target name="runtime">
+   <!-- CAL Nested Runtime -->
+   <echo message="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj assemble.EAR Creating Nested Runtime JAR file"/>
+   <echo message=""/>
+   <echo message="...Creating Nested Runtime JAR file"/>
+   <delete file="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/genrt.jar"
+           quiet="true"/>
+   <ant antfile="C:\Program Files (x86)\CA\Gen86Free\gen\classes\mkjavart.xml"
+        dir="C:\Program Files (x86)\CA\Gen86Free\gen\classes"
+        target="clean">
+       <property name="jar.filename" value="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/genrt.jar"/>
+       <property name="targetVersion" value="1.6"/>
+       <property name="sourceVersion" value="1.6"/>
+   </ant>
+   <ant antfile="C:\Program Files (x86)\CA\Gen86Free\gen\classes\mkjavart.xml"
+        dir="C:\Program Files (x86)\CA\Gen86Free\gen\classes"
+        target="WCE_dirty">
+       <property name="jar.filename" value="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/genrt.jar"/>
+       <property name="targetVersion" value="1.6"/>
+       <property name="sourceVersion" value="1.6"/>
+   </ant>
+   <ant antfile="C:\Program Files (x86)\CA\Gen86Free\gen\classes\mkjavart.xml"
+        dir="C:\Program Files (x86)\CA\Gen86Free\gen\classes"
+        target="AllComms">
+       <property name="jar.filename" value="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/genrt.jar"/>
+       <property name="targetVersion" value="1.6"/>
+       <property name="sourceVersion" value="1.6"/>
+   </ant>
+   <copy file="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/genrt.jar" todir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee" />
+</target>
+<target name="assemble.ear">
+   <!-- CAL -->
+   <echo message="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj assemble.EAR Creating CAL EAR file"/>
+   <echo message=""/>
+   <echo message="...Creating CAL EAR file"/>
+   <echo message="Imbedding CAL.war EAR file"/>
+      <echo message="Static docs location=C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html"/>
+   <delete file="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/CAL.ear" quiet="true"/>
+   <jar duplicate="preserve" jarfile="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/CAL.ear"
+        manifest="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/META-INF/MANIFEST.MF">
+       <fileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp"
+                includes="META-INF/application.xml"/>
+       <fileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp"
+                includes="genrt.jar"/>
+       <fileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp" includes="CAL.war"/>
+   </jar>
+   <delete dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\Web Services/temp1" quiet="true"/>
+   <delete dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\Web Services/temp2" quiet="true"/>
+</target>
+<target name="verify">
+    <echo message="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj assemble.EAR Verifying Business System CSS files"/>
+    <echo message=""/>
+    <echo message="...Verifying Business System CSS files"/>
+        <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html\css\CALCULAT.css" required="false"/>
+</target>
+<target name="assemble.war">
+   <echo message="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj assemble.EAR Creating CAL web.xml"/>
+   <echo message=""/>
+   <echo message="...Creating CAL web.xml "/>
+   <delete file="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\web.xml" quiet="true"/>
+   <webxml modelname="CALCULAT"
+           localname="CAL"
+           xmlfiles="
+              web_calculat.xml
+                     "
+           ccloadmodules=""
+           ejbrefs="false"
+           localejbrefs=""
+           clientpsteps=""
+           resourcerefs="false"
+           deploystyle="dialogs"
+           threads="disabled"
+           loadonstartup="true"
+           documentroot=""
+           browsercontrolledhistory="NO"
+           sessiontimeout="30"
+           tracing="true"
+           traceURL="localhost:4567"
+           cmidebug=""
+           usejta="disabled"
+           usedso="enabled"
+           hassql="false"
+           webview=""
+           dbmsname="IEFDB"
+           dbconnect=""
+           compressdynamiccontent="YES"
+           compressstaticcontent="YES"
+           queuefactory=""
+           queuename=""
+           appservername="WebSphere"
+           destdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\"/>
+   <gzip file="calculat.jsp" srcDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html" destDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp" Compress="true" SingleFile="True" />
+   <gzip file="amaty1.jsp" srcDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html" destDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp" Compress="true" SingleFile="True" />
+   <gzip file="calcula1.jsp" srcDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html" destDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp" Compress="true" SingleFile="True" />
+   <gzip file="CALCULAT_WIN.html" srcDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html" destDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp" Compress="true" SingleFile="True" />
+   <gzip file="CALCULAT_WIN.js" srcDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html" destDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp" Compress="true" SingleFile="True" />
+   <gzip file="AMATY.html" srcDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html" destDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp" Compress="true" SingleFile="True" />
+   <gzip file="AMATY.js" srcDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html" destDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp" Compress="true" SingleFile="True" />
+   <gzip file="calculat_help.html" srcDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html" destDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp" Compress="true" SingleFile="True" />
+   <gzip file="CALCULAT.css" srcDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html\css" destDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp\css" Compress="true" SingleFile="True" />
+   <copy todir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/genfilestemp" >
+      <fileset dir="C:\Program Files (x86)\CA\Gen86Free\gen\">
+         <patternset id="application.static.docs">
+            <include name="*.gif"/>
+            <include name="*.js"/>
+            <include name="beansupport.jar"/>
+            <include name="ief_*"/>
+         </patternset>
+      </fileset>
+   </copy>
+   <gzip file="none" srcDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/genfilestemp" destDir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp" Compress="true" SingleFile="False" />
+      <copy todir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp\images" >
+         <fileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html\images"/>
+      </copy>
+   <echo message="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj assemble.EAR Creating CAL"/>
+   <echo message=""/>
+   <echo message="...Creating CAL.war "/>
+   <war warfile="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/CAL.war"
+        manifest="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp/META-INF/MANIFEST.MF"
+        webxml="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\web.xml">
+      <lib file="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\Classes/CALCULAT/CALCULAT.jar"/>
+      <fileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\ole">
+         <patternset id="application.ole.files">
+            <include name="*"/>
+            <exclude name="*.ole"/>
+         </patternset>
+      </fileset>
+      <fileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp">
+         <patternset id="application.control.docs">
+            <include name="ief_Templates.xml*"/>
+            <include name="ief_Controller.html*"/>
+        </patternset>
+      </fileset>
+      <fileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp">
+         <patternset id="model.static.docs">
+            <include name="*"/>
+	    <exclude name="ief_Templates.xml*"/>
+            <exclude name="ief_Controller.html*"/>
+         </patternset>
+      </fileset>
+      <zipfileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp\css" prefix="css">
+         <patternset id="model.static.docs">
+            <include name="*"/>
+         </patternset>
+      </zipfileset>
+      <zipfileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp\images" prefix="images">
+         <patternset id="model.static.docs">
+            <include name="*"/>
+         </patternset>
+      </zipfileset>
+   </war>
+</target>
+<target name="cleanup">
+   <delete dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/temp" quiet="true"/>
+   <delete dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/statictemp" quiet="true"/>
+   <delete dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/genfilestemp" quiet="true"/>
+   <delete dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/additionalfilestemp" quiet="true"/>
+   <delete dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\deploy.j2ee/wvpath" quiet="true"/>
+   <delete dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\Web Services/temp" quiet="true"/>
+ </target>
+</project>

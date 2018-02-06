@@ -1,0 +1,156 @@
+
+CA Gen Build Tool Compose
+Copyright (c) 2016 CA. All rights reserved.
+
+
+Compose Succeeded
+
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Program Files (x86)\CA\Gen86Free\Gen>"C:\Program Files (x86)\CA\SharedComponents\JRE\1.8.0_60\\bin\java.exe "   -classpath "C:\Program Files (x86)\CA\Gen86Free\gen\bt\bt.jar" com.ca.gen.bt.Execute  "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.bat"
+Initial search for build executables
+  NMAKE.EXE, HHC.EXE, CL.EXE, LINK.EXE, RC.EXE
+
+--- Found NMAKE.EXE
+
+--- Found HHC.EXE
+
+--- Found CL.EXE
+
+--- Found LINK.EXE
+
+--- Found RC.EXE
+
+
+...Copying C:\Program Files (x86)\CA\Gen86Free\gen\.\STUBN.OBJ to C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\OBJC\STUB.OBJ
+
+=====================Load Module Script Environment=================
+Operating System: WINDOWS
+"Database Manager: <NONE>"
+Environment:      WINDOWS
+Language:         C
+Codepage:         1252
+Model:            CALCULAT
+Subset:           ALL
+Level:            9.2.A6.01
+
+==============================SUMMARY===============================
+Summary of Load Module Script Results for Load Module CAL:
+==============================LEGEND================================
+Legend: ... precedes information about an operation to be performed.
+        --- precedes results from an operation which just completed.
+        *** precedes error info from an operation which just failed.
+        (Symbols preceding info are indented to convey step levels.)
+
+==============================DETAILS===============================
+Details of CAL Load Module Script Results:
+
+Microsoft (R) Program Maintenance Utility Version 14.00.24210.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+...Compiling Stub resources
+	copy "C:\Program Files (x86)\CA\Gen86Free\gen\version\applno.bat" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\applno.bat"
+        1 file(s) copied.
+	call "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\applno.bat" YES "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\" CAL "C:\Program Files (x86)\CA\Gen86Free\gen\" GUI
+APPLNO.BAT : CA Gen BUILDTIME and BUILDVER update file
+	rc -r -DWIN -D_AFXDLL -DIEF_BITMAP=. -I"%IEF_BITMAP%" -I"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\." -I"C:\Program Files (x86)\CA\Gen86Free\gen\version" -DCUSTOMER_APPL -fo"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\STUB.RES" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\stub.rc"
+Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
+
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+...Linking Load Module stub CAL
+	link /NOLOGO /SUBSYSTEM:WINDOWS -entry:WinMainCRTStartup -out:"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.EXE"  /DELAYLOAD:WRGN.DLL "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\OBJC\STUB.OBJ" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\OBJC\STUBMAIN.OBJ" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\STUB.RES" @"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\STUB.LNK"
+...Compiling GUI Help file for CAL
+	hhc "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.HHP"
+Microsoft HTML Help Compiler 4.74.8702
+
+
+
+Compiling c:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.chm
+
+
+
+
+
+Compile time: 0 minutes, 3 seconds
+
+31	Topics
+
+87	Local links
+
+0	Internet links
+
+0	Graphics
+
+
+
+
+
+Created c:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.chm, 13,062 bytes
+
+Compression decreased file by 6,964 bytes.
+
+...Compiling CAL - HOME
+	cl -c -EHsc -Zc:forScope- -W3 -Od -nologo -DCGGUI -DNDEBUG -D_WINDOWS -D_MBCS -MD -D_AFXDLL  -DWIN32 -DWIN -D_X86_ -Dtry=cktry -Dexcept=__except -Dleave=__leave -Dfinally=__finally -D_CRT_SECURE_NO_DEPRECATE -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -DMSC -DNONTTRACE -DWIN_NT -DREENTRANT -Fo"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\OBJC\HOME.OBJ" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\HOME.C"
+cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+HOME.C
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\HOME.C(771): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\HOME.C(817): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\HOME.C(823): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\HOME.C(829): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\HOME.C(875): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\HOME.C(922): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+...Compiling CAL - EXPERT
+	cl -c -EHsc -Zc:forScope- -W3 -Od -nologo -DCGGUI -DNDEBUG -D_WINDOWS -D_MBCS -MD -D_AFXDLL  -DWIN32 -DWIN -D_X86_ -Dtry=cktry -Dexcept=__except -Dleave=__leave -Dfinally=__finally -D_CRT_SECURE_NO_DEPRECATE -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -DMSC -DNONTTRACE -DWIN_NT -DREENTRANT -Fo"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\OBJC\EXPERT.OBJ" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C"
+cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+EXPERT.C
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(2840): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(2996): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(3053): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(3226): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(3346): warning C4244: '=': conversion from 'double' to 'short', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(3349): warning C4244: '=': conversion from 'double' to 'short', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(3781): warning C4244: '=': conversion from 'double' to 'short', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(3784): warning C4244: '=': conversion from 'double' to 'short', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(4004): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(5111): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(5257): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(5271): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(5412): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(5566): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(5722): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(5744): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(5917): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(6046): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(6202): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(6224): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\EXPERT.C(6397): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+...Compiling CAL - CAL
+	cl -c -EHsc -Zc:forScope- -W3 -Od -nologo -DCGGUI -DNDEBUG -D_WINDOWS -D_MBCS -MD -D_AFXDLL  -DWIN32 -DWIN -D_X86_ -Dtry=cktry -Dexcept=__except -Dleave=__leave -Dfinally=__finally -D_CRT_SECURE_NO_DEPRECATE -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -DMSC -DNONTTRACE -DWIN_NT -DREENTRANT -Fo"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\OBJC\CAL.OBJ" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.C"
+cl : Command line warning D9035 : option 'Zc:forScope-' has been deprecated and will be removed in a future release
+CAL.C
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.C(1741): warning C4013: 'Tistrcpy' undefined; assuming extern returning int
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.C(1941): warning C4047: '=': 'PSTEPID' differs in levels of indirection from 'void *'
+...Creating/Updating CAL Structured Storage
+	CD "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\."
+	"C:\Program Files (x86)\CA\Gen86Free\gen\\wrocfcw" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL"
+	CD "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\."
+...Compiling GUI resources
+	rc -r -DWIN -DIEF_BITMAP=. -I"%IEF_BITMAP%" -I"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\." -I"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\." -I"C:\Program Files (x86)\CA\Gen86Free\gen\version" -I"C:\Program Files (x86)\CA\Gen86Free\gen\." -DCUSTOMER_APPL -fo"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.RES" "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.RC"
+Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
+
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+
+---Compiles for CAL.DLL Dependencies done
+...Linking Load Module DLL CAL
+	link /NOLOGO  /DLL /SUBSYSTEM:WINDOWS  /entry:_DllMainCRTStartup@12 /OUT:"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.DLL"  /implib:"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.LIB"  /def:"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.DEF" /OUT:"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.DLL" @"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.RSP" @"C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.LNK"
+   Creating library C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.LIB and object C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\CAL.exp
+IEFSIGNAL:OKBuild for Load Module CAL Completed.
+
+Important!  Review above for any errors.
+
+C:\Program Files (x86)\CA\Gen86Free\Gen>

@@ -1,0 +1,95 @@
+/*-- CA Gen 8.6 - File Name: CALCULAT.css - generated on 2017/04/09 (98) at 22:59:12  --*/
+table     { table-layout: fixed;             }
+DIV A {  text-decoration: none;  white-space: nowrap;             }
+TD A {  text-decoration: none;  cursor: default;  white-space: nowrap;             }
+TD A.NM:visited {  text-decoration: none;  cursor: default;             }
+TD A.NM:link {  text-decoration: none;  cursor: default;             }
+TD A.NM:active {  text-decoration: none;  cursor: default;             }
+TD P.NM {  text-decoration: none;             }
+
+.DFGUIDLG   {   color: #000000;  background-color: #d4d0c8;   text-decoration: none; 
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+
+.DFGUIWIN   {   color: #000000;  background-color: #d4d0c8;   text-decoration: none; 
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+
+.DFGUILNK, .DFGUILNK A, TD.DFGUILNK, TD.DFGUILNK A, DIV.DFGUILNK A 
+  {   color: #0000ff;   text-align: center;  z-index:1;
+  text-decoration: underline ;  font:   11pt  'Fixedsys',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+
+.DFGUISTB, .DFGUISTB A, TD.DFGUISTB, TD.DFGUISTB A, DIV.DFGUISTB A 
+  {  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+
+.DFGUITLB, .DFGUITLB A, TD.DFGUITLB, TD.DFGUITLB A, DIV.DFGUITLB A 
+  {  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+
+.DFGUILBX, .DFGUILBX A, TD.DFGUILBX, TD.DFGUILBX A, DIV.DFGUILBX A 
+  {   color: #000000;  background-color: #ffffff; 
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+.DFGUIDPN, .DFGUIDPN A, TD.DFGUIDPN, TD.DFGUIDPN A, DIV.DFGUIDPN A 
+  {   color: #000000;  background-color: #ffffff;  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+.DFGUICMG, .DFGUICMG A, TD.DFGUICMG, TD.DFGUICMG A, DIV.DFGUICMG A 
+  {   color: #000000;  background-color: #ffffff;  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+.DFGUILBXd, .DFGUILBXd A, TD.DFGUILBXd, TD.DFGUILBXd A, DIV.DFGUILBXd A 
+  {   color: #000000;  background-color: #ffffff; 
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+.DFGUIDPNd, .DFGUIDPNd A, TD.DFGUIDPNd, TD.DFGUIDPNd A, DIV.DFGUIDPNd A 
+  {   color: #000000;  background-color: #ffffff;  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+.DFGUICMGd, .DFGUICMGd A, TD.DFGUICMGd, TD.DFGUICMGd A, DIV.DFGUICMGd A 
+  {   color: #000000;  background-color: #ffffff;  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+
+.DFGUIGBX, .DFGUIGBX A, TD.DFGUIGBX, TD.DFGUIGBX A, DIV.DFGUIGBX A 
+  {              }
+
+.DFGUIMNU, .DFGUIMNU A, TD.DFGUIMNU, TD.DFGUIMNU A, DIV.DFGUIMNU A 
+  {   background-color: #d4d0c8; 
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+.DFGUIMNU_mouseover, .DFGUIMNU_mouseover A, TD.DFGUIMNU_mouseover, TD.DFGUIMNU_mouseover A, DIV.DFGUIMNU_mouseover A 
+  {  color:#ffffff; background-color:#0000ff;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+
+.DFGUIPSB, .DFGUIPSB A, TD.DFGUIPSB, TD.DFGUIPSB A, DIV.DFGUIPSB A 
+  {    text-align: center;   white-space: nowrap;  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+.DFGUIPSBd, .DFGUIPSBd A, TD.DFGUIPSBd, TD.DFGUIPSBd A, DIV.DFGUIPSBd A 
+  {    text-align: center;   white-space: nowrap;  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+
+.DFGUISLE, .DFGUISLE A, TD.DFGUISLE, TD.DFGUISLE A, DIV.DFGUISLE A 
+  {  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+.DFGUIMLE, .DFGUIMLE A, TD.DFGUIMLE, TD.DFGUIMLE A, DIV.DFGUIMLE A 
+  {  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+.DFGUISLEd, .DFGUISLEd A, TD.DFGUISLEd, TD.DFGUISLEd A, DIV.DFGUISLEd A 
+  {  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+.DFGUIMLEd, .DFGUIMLEd A, TD.DFGUIMLEd, TD.DFGUIMLEd A, DIV.DFGUIMLEd A 
+  {  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+
+.DFGUILIT, .DFGUILIT A, TD.DFGUILIT, TD.DFGUILIT A, DIV.DFGUILIT A 
+  {    overflow:hidden; z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+.DFGUILITd, .DFGUILITd A, TD.DFGUILITd, TD.DFGUILITd A, DIV.DFGUILITd A 
+  {    overflow:hidden; z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+
+.DFGUIPRM, .DFGUIPRM A, TD.DFGUIPRM, TD.DFGUIPRM A, DIV.DFGUIPRM A 
+  {    overflow:hidden;  white-space: nowrap;  z-index:1;             }
+.DFGUICKB, .DFGUICKB A, TD.DFGUICKB, TD.DFGUICKB A, DIV.DFGUICKB A 
+  {    overflow:hidden;  white-space: nowrap;  z-index:1;             }
+.DFGUIRDB, .DFGUIRDB A, TD.DFGUIRDB, TD.DFGUIRDB A, DIV.DFGUIRDB A 
+  {    overflow:hidden;  white-space: nowrap;  z-index:1;             }
+.DFGUIPRMLBX, .DFGUIPRMLBX A, TD.DFGUIPRMLBX, TD.DFGUIPRMLBX A, DIV.DFGUIPRMLBX A 
+  {   color: #000000;  background-color: #d4d0c8;    overflow:hidden;  white-space: nowrap;  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }
+.DFGUIPRMLBXd, .DFGUIPRMLBXd A, TD.DFGUIPRMLBXd, TD.DFGUIPRMLBXd A, DIV.DFGUIPRMLBXd A 
+  {   color: #000000;  background-color: #d4d0c8;    overflow:hidden;  white-space: nowrap;  z-index:1;
+  font:  bold   10pt  'System',Arial, sans-serif, serif, monospace, cursive, fantasy ;              }

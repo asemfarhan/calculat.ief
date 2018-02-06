@@ -1,0 +1,134 @@
+
+CA Gen Build Tool Compose
+Copyright (c) 2016 CA. All rights reserved.
+
+
+Compose Succeeded
+
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Program Files (x86)\CA\Gen86Free\Gen>"C:\Program Files (x86)\CA\SharedComponents\JRE\1.8.0_60\\bin\java.exe "   -classpath "C:\Program Files (x86)\CA\Gen86Free\gen\bt\bt.jar" com.ca.gen.bt.Execute  "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\assemble.EAR.bat"
+
+=====================EARFILE Assemble Information============
+EAR File: CAL.ear
+   WAR Modules:
+      CALCULAT
+   Additional Files:
+      - EAR file:
+        - WAR () file:
+
+===========================================================
+C:\Program Files (x86)\CA\Gen86Free\gen\classes\csu.jar;C:\Program Files (x86)\CA\Gen86Free\gen\classes\vwrt.jar;C:\Program Files (x86)\CA\Gen86Free\gen\classes\abrt.jar;C:\Program Files (x86)\CA\Gen86Free\gen\bt\bt.jar;C:\Program Files\Java\jdk1.6.0_45\lib\tools.jar
+java version "1.6.0_45"
+Java(TM) SE Runtime Environment (build 1.6.0_45-b06)
+Java HotSpot(TM) 64-Bit Server VM (build 20.45-b01, mixed mode)
+Buildfile: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\assemble.EAR.XML
+Trying to override old definition of task gzip
+Trying to override old definition of task manifest
+
+dirs:
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\temp
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\temp\META-INF
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\temp\WEB-INF
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\statictemp
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\statictemp\css
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\statictemp\images
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\genfilestemp
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\additionalfilestemp
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\wvpath
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\wvpath\webviewrt
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\Web Services\temp
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\Web Services\temp\META-INF
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\Web Services\temp\WEB-INF
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\Web Services\temp\WEB-INF\lib
+
+manifest:
+     [echo] 
+     [echo] ...Creating CAL manifest.mf 
+
+verify:
+     [echo] 
+     [echo] ...Verifying Business System CSS files
+
+assemble.war:
+     [echo] 
+     [echo] ...Creating CAL web.xml 
+   [delete] Deleting: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\web.xml
+     [copy] Copying 49 files to C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\genfilestemp
+     [echo] 
+     [echo] ...Creating CAL.war 
+      [war] Building war: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\temp\CAL.war
+
+application.xml:
+     [echo] 
+     [echo] ...Creating CAL application.xml 
+
+runtime:
+     [echo] 
+     [echo] ...Creating Nested Runtime JAR file
+
+clean:
+
+build.wce:
+      [jar] Building jar: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\temp\genrt.jar
+
+WCE_dirty:
+
+build.tcpip:
+      [jar] Updating jar: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\temp\genrt.jar
+
+TCPIP:
+
+build.mqs:
+
+MQSeries:
+
+build.eci:
+
+ECI:
+
+build.ejbrmi:
+      [jar] Updating jar: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\temp\genrt.jar
+
+EJBRMI:
+
+build.tuxedo:
+
+Tuxedo:
+
+build.ws:
+      [jar] Updating jar: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\temp\genrt.jar
+
+WS:
+
+AllComms:
+     [copy] Copying 1 file to C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee
+
+assemble.ear:
+     [echo] 
+     [echo] ...Creating CAL EAR file
+     [echo] Imbedding CAL.war EAR file
+     [echo] Static docs location=C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\\..\html
+      [jar] Building jar: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\CAL.ear
+
+cleanup:
+   [delete] Deleting directory C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\temp
+   [delete] Deleting directory C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\statictemp
+   [delete] Deleting directory C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\genfilestemp
+   [delete] Deleting directory C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\additionalfilestemp
+   [delete] Deleting directory C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\deploy.j2ee\wvpath
+   [delete] Deleting directory C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\Web Services\temp
+
+assemble:
+
+all:
+
+BUILD SUCCESSFUL
+Total time: 19 seconds
+IEFSIGNAL:OK
+
+Ear File Assemble for assemble.EAR Completed.
+Important!  Review above for any errors.
+
+C:\Program Files (x86)\CA\Gen86Free\Gen>

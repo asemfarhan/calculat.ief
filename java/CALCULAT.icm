@@ -1,0 +1,173 @@
+:execdef
+        user=mansour
+        date=2017/04/09
+        time=22:59:15
+        os=NT.
+
+:source
+        model='CALCULAT'
+        subset='ALL'
+        dateup=0000/00/00
+        timeup=00:00
+        saved=NO
+        schema=9.2.A6
+        level=9.2.A6.01
+        localmodel=calculat
+        codepage=1252
+        isoencoding=UTF-8.
+:esource.
+
+:systems
+        techsys=CALCULAT
+        source=C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\
+        bitmap=C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\bitmap\
+        ole=C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\ole\.
+:esystems.
+
+:execunit
+        member=CALCULAT
+        language=JAVA
+        os=JVM
+        execenv=INTERNET
+        dbms=JDBC
+        isolation=CS
+        profile=SQL
+        format=BYPASS
+        dbname=IEFDB
+        lmtype=COOP
+        cascade=CASCADE
+        dialectdir=LEFTDIR
+        applguid={23408B5C-097E-4ED7-A9F9-237BA50A472E}
+        xmlfile=web_calculat.xml
+        package=calculat/CALCULAT.
+
+:pstep
+        member=HOME
+        name=CALCULAT_WIN
+        techsys=CALCULAT
+        dlgtran=CALCULA1
+        clrtran=CALCULA1
+        sql=NO
+        create=NO
+        update=NO
+        delete=NO
+        test=YES
+        nondial=''
+        publicimportview=CalculatWinImport
+        publicexportview=CalculatWinExport
+        importviewname=HOME_IA
+        exportviewname=HOME_OA
+        package=calculat
+        :refers
+        :erefers.
+:epstep.
+
+:pstep
+        member=EXPERT
+        name=AMATY
+        techsys=CALCULAT
+        dlgtran=AMATY1
+        clrtran=AMATY1
+        sql=NO
+        create=NO
+        update=NO
+        delete=NO
+        test=YES
+        nondial=''
+        publicimportview=AmatyImport
+        publicexportview=AmatyExport
+        importviewname=EXPERT_IA
+        exportviewname=EXPERT_OA
+        localviewname=EXPERT_LA
+        package=calculat
+        :refers
+        :erefers.
+:epstep.
+
+:css
+        file=CALCULAT.css.
+:ecss.
+
+:html
+        file=calculat.jsp.
+:ehtml.
+
+:html
+        file=amaty1.jsp.
+:ehtml.
+
+:html
+        file=calcula1.jsp.
+:ehtml.
+
+:html
+        file=CALCULAT_WIN.html.
+:ehtml.
+
+:html
+        file=CALCULAT_WIN.js.
+:ehtml.
+
+:html
+        file=AMATY.html.
+:ehtml.
+
+:html
+        file=AMATY.js.
+:ehtml.
+
+:html
+        file=calculat_help.html.
+:ehtml.
+
+:subordinate
+        member=CALCULAT_WIN
+        file=CALCULAT_WIN
+        package=calculat/CALCULAT/FlowTables.
+:esubordinate.
+
+:subordinate
+        member=AMATY
+        file=AMATY
+        package=calculat/CALCULAT/FlowTables.
+:esubordinate.
+
+:subordinate
+        member=CALCULAT_WIN
+        file=CALCULAT_WIN
+        package=calculat/CALCULAT/ProcedureSteps.
+:esubordinate.
+
+:subordinate
+        member=AMATY
+        file=AMATY
+        package=calculat/CALCULAT/ProcedureSteps.
+:esubordinate.
+
+:subordinate
+        member=CALCULAT_WIN
+        file=CALCULAT_WIN
+        package=calculat/CALCULAT/Windows.
+:esubordinate.
+
+:subordinate
+        member=AMATY
+        file=AMATY
+        package=calculat/CALCULAT/Windows.
+:esubordinate.
+
+:subordinate
+        member=ServletManager
+        file=ServletManager
+        package=calculat/CALCULAT.
+:esubordinate.
+
+    :lmreference
+        type=COOP CLIENT
+        name=CALCULAT
+    :elmreference
+
+:eexecunit.
+
+:eexecdef.
+

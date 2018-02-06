@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<Report>
+<title>Consistency Check</title>
+<modelname>CALCULAT</modelname>
+<subset>(complete model)</subset>
+<datetime>Apr. 09, 2017  23:08</datetime>
+<ReportDescription Level="** ALL **" Description=" Warnings, Severe Warnings, Errors, Fatal Errors">
+<TPCROOT Name="">
+<TSUBJ Name="Subject Area CALCULAT">
+<Error Severity="4" Description="ICCSA01W A lowest-level Subject Area should decompose into at least one entity type." />
+</TSUBJ>
+<TFNCDF Name="Function CALCULAT">
+<Error Severity="4" Description="ICCFN02W A function should decompose into at least two activities." />
+</TFNCDF>
+<TSNGLNFL Label="Entry Field All Number" SubLabel1=" in Window">
+<Error Severity="4" Description="ICCWM02W A Window mapping should have an import view; otherwise, information could be lost to the procedure." />
+</TSNGLNFL>
+<TLCLST Label="Statement 
+SET local calculat_name alllllll TO GetVisible( out_title_all calculat_name alllllll) 
+" SubLabel1=" within Event Action AMATY_PB_CLEAR_CLICK ">
+<Error Severity="4" Description="ICCOO01W Function cannot be executed in Web Client applications." />
+</TLCLST>
+<TLCLST Label="Statement 
+SET local calculat_name alllllll TO GetCaption( local calculat_name alllllll) 
+" SubLabel1=" within Event Action AMATY_PB_CLEAR_CLICK ">
+<Error Severity="4" Description="ICCOO01W Function cannot be executed in Web Client applications." />
+</TLCLST>
+<TLCLST Label="Statement 
+SET local calculat_name alllllll TO RegSetValue( local calculat_name alllllll , local calculat_name alllllll , local calculat_name alllllll) 
+" SubLabel1=" within Event Action AMATY_PB_CLEAR_CLICK ">
+<Error Severity="4" Description="ICCOO01W Function cannot be executed in Web Client applications." />
+</TLCLST>
+<TACBLKBS Label="Procedure Step" SubLabel1=" Action Block AMATY">
+<Error Severity="4" Description="ICCAB25W Action Diagram currently contains DISABLED statements." />
+</TACBLKBS>
+<TATTRUSR Label="Attribute TOTAL_REAL" SubLabel1=" of Work Set IEF_SUPPLIED">
+<Error Severity="3" Description="ICCAT42S An attribute of length greater than 15 needs decimal precision turned on both for accuracy and to prevent runtime errors with a client server flow." />
+</TATTRUSR>
+<ErrorCounts Errors="0" Warnings="8" />
+</TPCROOT>
+</ReportDescription>
+</Report>

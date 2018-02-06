@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+                              CA Gen 8.6
+       Copyright (c) 2016 CA Technologies. All rights reserved. 
+    Model Name:  CALCULAT
+    Load Mod:    CALCULAT                  Date: 16/11/23
+    Target OS:   JVM                       Time: 04:51:32
+    Target DBMS: JDBC                      User: mansour
+    Target GUI:  Web View                 
+    Dialect:     DEFAULT                  
+-->
+<ProcedureStep Name="CALCULAT_WIN" Id="102" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:gdt="http://www.ca.com/gen/GenDataTypes" xmlns="http://www.ca.com/gen/ProcedureStep"
+ xsi:schemaLocation="http://www.ca.com/gen/ProcedureStep urn:ProcedureStep.xsd">
+    <ClearScreenTranCode>CALCULA1</ClearScreenTranCode>
+    <Type>0</Type>
+    <ImportViewName>HOME_IA</ImportViewName>
+    <ExportViewName>HOME_OA</ExportViewName>
+    <ActionBlockName>HOME</ActionBlockName>
+    <WindowList LoadModuleName="CALCULAT" >
+        <WindowInfo>CALCULAT.Windows.CALCULAT_WIN</WindowInfo>
+    </WindowList>
+    <InoutViewmap Identifier="INOUT_3C00001_CALCULAT_WIN" SrcView="calculat.HOME_IA" DestView="calculat.HOME_OA" >
+        <gdt:EntityView Src="ImportResultIefSuppliedResult" Dest="ExportResultIefSuppliedResult" />
+        <gdt:EntityView Src="ImportN1IefSuppliedNumber1st" Dest="ExportN1IefSuppliedNumber1st" />
+        <gdt:EntityView Src="ImportN2ndIefSuppliedNumber2" Dest="ExportN2ndIefSuppliedNumber2" />
+    </InoutViewmap>
+    <OutinViewmap Identifier="OUTIN_3C00001_CALCULAT_WIN" SrcView="calculat.HOME_OA" DestView="calculat.HOME_IA" >
+        <gdt:EntityView Src="ExportResultIefSuppliedResult" Dest="ImportResultIefSuppliedResult" />
+        <gdt:EntityView Src="ExportN1IefSuppliedNumber1st" Dest="ImportN1IefSuppliedNumber1st" />
+        <gdt:EntityView Src="ExportN2ndIefSuppliedNumber2" Dest="ImportN2ndIefSuppliedNumber2" />
+    </OutinViewmap>
+    <DialogFlowList>
+        <!-- No flows exist for this pstep -->
+    </DialogFlowList>
+    <WindowCommandList>
+        <Command Value="PLUS" />
+        <Command Value="MINS" />
+        <Command Value="CLEAR" />
+    </WindowCommandList>
+</ProcedureStep>

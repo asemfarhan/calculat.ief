@@ -1,0 +1,97 @@
+﻿<!-- CA Gen Generated makefile for CALCULAT_WebView -->
+<!-- Copyright (C) 2016 CA. All rights reserved. -->
+<project name="CALCULAT_WebView"
+         default="all"
+         basedir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\">
+<taskdef name="fileexists" classname="com.ca.gen.bt.tasks.FileExists"/>
+<taskdef name="validategenxml" classname="com.ca.gen.bt.tasks.ValidateGenXml"/>
+<path id="classpath.base">
+  <pathelement location="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CASCADE"/>
+  <pathelement location="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CALCULAT_WebView"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/ejbrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/wsrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/vwrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/odc.ejbrmi.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/odc.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/abrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/fmrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/wmrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/smrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes"/>
+  <pathelement location="C:\Users\mansour\AppData\LocalLow\Sun\Java/lib/javaee.jar"/>
+</path>
+<target name="all" depends="dirs,build,jar" />
+<target name="dirs">
+    <delete dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CALCULAT_WebView"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CALCULAT_WebView"/>
+</target>
+<target name="build" depends="build.eab,build.ab,build.ps,build.sub,build.lm"/>
+<target name="build.eab">
+</target>
+<target name="build.ab">
+</target>
+<target name="build.ps">
+<!-- Procedure Step Classes -->
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CALCULAT_WebView"/>
+      <arg value="Verifying Procedure Step Classes"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Verifying Procedure Step Classes"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\HOME.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\HOME_IA.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\HOME_OA.java"/>
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CALCULAT_WebView"/>
+      <arg value="Compiling Procedure Step Classes"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Compiling Procedure Step Classes"/>
+   <javac srcdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\"
+          destdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT_WebView"
+          includes="
+                    calculat\HOME.java,
+                    calculat\HOME_IA.java,
+                    calculat\HOME_OA.java,
+                    calculat\package-info.java
+         "
+         encoding="UTF-8"
+         target="1.6"
+         source="1.6"
+         classpathref="classpath.base" />
+</target>
+<target name="build.sub">
+</target>
+<target name="build.lm">
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+         <arg value="CALCULAT_WebView"/>
+         <arg value="Verifying Web View XML files"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Verifying Web View XML files"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\xml\\CALCULAT\CALCULAT.xml"/>
+   <validategenxml filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\xml\\CALCULAT\CALCULAT.xml"
+                   schemafilename="C:\Program Files (x86)\CA\Gen86Free\gen\bt\xmlxsd\LoadModule.xsd"/>
+         <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\xml\\CALCULAT\ProcedureSteps\CALCULAT_WIN.xml"/>
+         <validategenxml filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\xml\\CALCULAT\ProcedureSteps\CALCULAT_WIN.xml"
+                   schemafilename="C:\Program Files (x86)\CA\Gen86Free\gen\bt\xmlxsd\ProcedureStep.xsd"/>
+            <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\xml\\CALCULAT\Windows\CALCULAT_WIN.xml"/>
+            <validategenxml filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\xml\\CALCULAT\Windows\CALCULAT_WIN.xml"
+                   schemafilename="C:\Program Files (x86)\CA\Gen86Free\gen\bt\xmlxsd\Window.xsd"/>
+</target>
+<target name="jar">
+<!-- C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT_WebView\CALCULAT.jar -->
+ <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+    <arg value="CALCULAT_WebView"/>
+    <arg value="Building CALCULAT_WebView\CALCULAT.jar"/>
+ </exec>
+ <echo message=""/>
+ <echo message="...Building CALCULAT_WebView\CALCULAT.jar"/>
+ <delete file="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT_WebView\CALCULAT.jar"
+         quiet="true"/>
+ <jar duplicate="preserve" jarfile="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT_WebView\CALCULAT.jar">
+     <fileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT_WebView"
+              includes="**\*.class"/>
+ </jar>
+</target>
+</project>

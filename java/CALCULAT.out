@@ -1,0 +1,82 @@
+
+CA Gen Build Tool Compose
+Copyright (c) 2016 CA. All rights reserved.
+
+
+Compose Succeeded
+
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Program Files (x86)\CA\Gen86Free\Gen>"C:\Program Files (x86)\CA\SharedComponents\JRE\1.8.0_60\\bin\java.exe "   -classpath "C:\Program Files (x86)\CA\Gen86Free\gen\bt\bt.jar" com.ca.gen.bt.Execute  "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\CALCULAT.bat"
+
+=====================Load Module Script Environment=================
+Operating System: JVM
+Environment:      INTERNET
+Language:         java
+Codepage:         1252
+ISOEncoding:      UTF-8
+Module Type:      COOP
+
+==============================SUMMARY===============================
+Summary of Load Module Script Results for Load Module CALCULAT:
+==============================LEGEND================================
+Legend: ... precedes information about an operation to be performed.
+        --- precedes results from an operation which just completed.
+        *** precedes error info from an operation which just failed.
+        (Symbols preceding info are indented to convey step levels.)
+
+==============================DETAILS===============================
+Details of CALCULAT Load Module Script Results:
+.;C:\Program Files (x86)\CA\Gen86Free\gen\bt\bt.jar;C:\Program Files\Java\jdk1.6.0_45\lib\tools.jar
+Buildfile: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\CALCULAT.XML
+
+dirs:
+   [delete] Deleting directory C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT
+
+build.eab:
+
+build.ab:
+
+build.ps:
+     [echo] 
+     [echo] ...Verifying Procedure Step Classes
+     [echo] 
+     [echo] ...Compiling Procedure Step Classes
+    [javac] C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\CALCULAT.XML:69: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 8 source files to C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT
+
+build.sub:
+     [echo] 
+     [echo] ...Verifying Subordinate Classes
+     [echo] 
+     [echo] ...Compiling Subordinate Classes
+    [javac] C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\CALCULAT.XML:106: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 7 source files to C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+build.lm:
+     [echo] 
+     [echo] ...Verifying Load Module Class
+     [echo] 
+     [echo] ...Compiling Load Module Class
+    [javac] C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\CALCULAT.XML:129: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+build:
+
+jar:
+     [echo] 
+     [echo] ...Building CALCULAT\CALCULAT.jar
+      [jar] Building jar: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT\CALCULAT.jar
+
+all:
+
+BUILD SUCCESSFUL
+Total time: 9 seconds
+IEFSIGNAL:OK
+Build for Load Module CALCULAT Completed.
+Important!  Review above for any errors.
+
+C:\Program Files (x86)\CA\Gen86Free\Gen>

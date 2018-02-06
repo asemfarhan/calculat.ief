@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+                              CA Gen 8.6
+       Copyright (c) 2016 CA Technologies. All rights reserved. 
+    Model Name:  CALCULAT
+    Load Mod:    CALCULAT                  Date: 16/11/23
+    Target OS:   JVM                       Time: 04:51:32
+    Target DBMS: JDBC                      User: mansour
+    Target GUI:  Web View                 
+    Dialect:     DEFAULT                  
+-->
+<LoadModule Name="CALCULAT" Id="100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:gdt="http://www.ca.com/gen/GenDataTypes" xmlns="http://www.ca.com/gen/LoadModule"
+ xsi:schemaLocation="http://www.ca.com/gen/LoadModule urn:LoadModule.xsd">
+    <ExtensionTable>
+        <ModelName>CALCULAT</ModelName>
+        <DatabaseName>NONE</DatabaseName>
+        <DbmsType>JDBC</DbmsType>
+        <DecimalSeperator>.</DecimalSeperator>
+        <ThousandsSeperator>,</ThousandsSeperator>
+        <Dialect>DEFAULT</Dialect>
+        <Culture></Culture>
+        <IsDefaultDialect>1</IsDefaultDialect>
+        <IefVersion>8600333</IefVersion>
+        <MessageFile>wr</MessageFile>
+        <CodePage>1252</CodePage>
+        <NameSpace>calculat</NameSpace>
+    <TranDataList>
+        <!--  no cooperative flows from here  -->
+    </TranDataList>
+</ExtensionTable>
+<PstepList LoadModuleName="CALCULAT" >
+    <ProcedureStepInfo Data="CALCULAT.ProcedureSteps.CALCULAT_WIN" ClearScreenTranCode="CALCULA1" />
+</PstepList>
+<PermittedValueTables>
+    <PermittedValues Identifier="PVAL_3600074_FLAG" >
+        <PermittedValue LowValue="N" HighValue="" />
+        <PermittedValue LowValue="Y" HighValue="" />
+    </PermittedValues>
+</PermittedValueTables>
+<ExitStateList>
+    <ExitState Id="238026767" Name="SUBJECT_LIST" />
+    <ExitState Id="238026766" Name="FLOW_TO_MENU" />
+    <ExitState Id="238026765" Name="RETURN" />
+    <ExitState Id="238026764" Name="ACTION_BAR_IS_INVALID" />
+    <ExitState Id="238026763" Name="INVALID_COMMAND" />
+    <ExitState Id="238026762" Name="VALID_DELETE" />
+    <ExitState Id="238026761" Name="VALID_UPDATE" />
+    <ExitState Id="238026760" Name="VALID_CREATE" />
+    <ExitState Id="238026759" Name="DELETE_OK" />
+    <ExitState Id="238026758" Name="UPDATE_OK" />
+    <ExitState Id="238026757" Name="CREATE_OK" />
+    <ExitState Id="238026756" Name="DISPLAY_OK" />
+    <ExitState Id="238026755" Name="KEY_FIELD_IS_BLANK" />
+    <ExitState Id="238026754" Name="KEY_CHANGE_NOT_ALLOWED" />
+    <ExitState Id="238026753" Name="PROCESSING_OK" />
+    <ExitState Id="238026752" Name="PROCESSING_STARTED" />
+</ExitStateList>
+<PstepLmXref>
+</PstepLmXref>
+</LoadModule>

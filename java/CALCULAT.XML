@@ -1,0 +1,146 @@
+﻿<!-- CA Gen Generated makefile for CALCULAT -->
+<!-- Copyright (C) 2016 CA. All rights reserved. -->
+<project name="CALCULAT"
+         default="all"
+         basedir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\">
+<taskdef name="fileexists" classname="com.ca.gen.bt.tasks.FileExists"/>
+<taskdef name="validategenxml" classname="com.ca.gen.bt.tasks.ValidateGenXml"/>
+<path id="classpath.base">
+  <pathelement location="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CASCADE"/>
+  <pathelement location="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CALCULAT"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/ejbrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/wsrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/vwrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/odc.ejbrmi.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/odc.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/abrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/fmrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/wmrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/smrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes"/>
+  <pathelement location="C:\Sun\SDK/lib/javaee.jar"/>
+</path>
+<target name="all" depends="dirs,build,jar" />
+<target name="dirs">
+    <delete dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CALCULAT"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CALCULAT"/>
+</target>
+<target name="build" depends="build.eab,build.ab,build.ps,build.sub,build.lm"/>
+<target name="build.eab">
+</target>
+<target name="build.ab">
+</target>
+<target name="build.ps">
+<!-- Procedure Step Classes -->
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CALCULAT"/>
+      <arg value="Verifying Procedure Step Classes"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Verifying Procedure Step Classes"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\HOME.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\HOME_IA.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\HOME_OA.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\EXPERT.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\EXPERT_IA.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\EXPERT_OA.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\EXPERT_LA.java"/>
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CALCULAT"/>
+      <arg value="Compiling Procedure Step Classes"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Compiling Procedure Step Classes"/>
+   <javac srcdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\"
+          destdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT"
+          includes="
+                    calculat\HOME.java,
+                    calculat\HOME_IA.java,
+                    calculat\HOME_OA.java,
+                    calculat\EXPERT.java,
+                    calculat\EXPERT_IA.java,
+                    calculat\EXPERT_OA.java,
+                    calculat\EXPERT_LA.java,
+                    calculat\package-info.java
+         "
+         encoding="UTF-8"
+         target="1.6"
+         source="1.6"
+         classpathref="classpath.base" />
+</target>
+<target name="build.sub">
+<!-- Subordinate Classes -->
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CALCULAT"/>
+      <arg value="Verifying Subordinate Classes"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Verifying Subordinate Classes"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CALCULAT/FlowTables\CALCULAT_WIN.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CALCULAT/FlowTables\AMATY.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CALCULAT/ProcedureSteps\CALCULAT_WIN.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CALCULAT/ProcedureSteps\AMATY.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CALCULAT/Windows\CALCULAT_WIN.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CALCULAT/Windows\AMATY.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CALCULAT\ServletManager.java"/>
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CALCULAT"/>
+      <arg value="Compiling Subordinate Classes"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Compiling Subordinate Classes"/>
+   <javac srcdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\"
+          destdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT"
+          includes="
+                    calculat/CALCULAT/FlowTables\CALCULAT_WIN.java,
+                    calculat/CALCULAT/FlowTables\AMATY.java,
+                    calculat/CALCULAT/ProcedureSteps\CALCULAT_WIN.java,
+                    calculat/CALCULAT/ProcedureSteps\AMATY.java,
+                    calculat/CALCULAT/Windows\CALCULAT_WIN.java,
+                    calculat/CALCULAT/Windows\AMATY.java,
+                    calculat/CALCULAT\ServletManager.java,
+         "
+         encoding="UTF-8"
+         target="1.6"
+         source="1.6"
+         classpathref="classpath.base" />
+</target>
+<target name="build.lm">
+<!-- Load Module Class -->
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CALCULAT"/>
+      <arg value="Verifying Load Module Class"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Verifying Load Module Class"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CALCULAT/LoadModule.java"/>
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CALCULAT"/>
+      <arg value="Compiling Load Module Class"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Compiling Load Module Class"/>
+   <javac srcdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\"
+          destdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CALCULAT"
+          includes="calculat/CALCULAT/LoadModule.java"
+         encoding="UTF-8"
+         target="1.6"
+         source="1.6"
+         classpathref="classpath.base" />
+</target>
+<target name="jar">
+<!-- C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT\CALCULAT.jar -->
+ <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+    <arg value="CALCULAT"/>
+    <arg value="Building CALCULAT\CALCULAT.jar"/>
+ </exec>
+ <echo message=""/>
+ <echo message="...Building CALCULAT\CALCULAT.jar"/>
+ <delete file="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT\CALCULAT.jar"
+         quiet="true"/>
+ <jar duplicate="preserve" jarfile="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT\CALCULAT.jar">
+     <fileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CALCULAT"
+              includes="**\*.class"/>
+ </jar>
+</target>
+</project>

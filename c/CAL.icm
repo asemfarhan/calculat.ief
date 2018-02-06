@@ -1,0 +1,72 @@
+:execdef
+        user=mansour
+        date=2017/04/09
+        time=21:24:08
+        os=NT.
+
+:source
+        model='CALCULAT'
+        subset='ALL'
+        dateup=0000/00/00
+        timeup=00:00
+        saved=NO
+        schema=9.2.A6
+        level=9.2.A6.01
+        codepage=1252.
+:esource.
+
+:systems
+        techsys=CALCULAT
+        source=C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\c\
+        bitmap=C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\bitmap\
+        ole=C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\ole\.
+:esystems.
+
+:execunit
+        member=CAL
+        language='C'
+        os=WINDOWS
+        execenv=WINDOWS
+        dbms=<NONE>
+        isolation=CS
+        profile=SQL
+        format=BYPASS
+        dbname=IEFDB
+        cascade=CASCADE
+        dialectdir=LEFTDIR
+        applguid={94879671-327C-4357-A6EB-B157EA5908A5}
+        helpstyle=HTMLHELP.
+
+:pstep
+        member=HOME
+        name=CALCULAT_WIN
+        techsys=CALCULAT
+        dlgtran=CALCULAT
+        clrtran=CALCULAT
+        sql=NO
+        create=NO
+        update=NO
+        delete=NO
+        test=YES
+        nondial=''.
+:epstep.
+
+:pstep
+        member=EXPERT
+        name=AMATY
+        techsys=CALCULAT
+        dlgtran=AMATY
+        clrtran=AMATY
+        sql=NO
+        create=NO
+        update=NO
+        delete=NO
+        test=YES
+        nondial=''.
+:epstep.
+
+
+:eexecunit.
+
+:eexecdef.
+

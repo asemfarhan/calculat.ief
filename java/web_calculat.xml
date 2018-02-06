@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Servlet Definition for LoadModule CALCULAT -->
+<servlet>
+    <servlet-name>CALCULATServletManager</servlet-name>
+    <servlet-class>calculat.CALCULAT.ServletManager</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>calculat</servlet-name>
+    <jsp-file>/calculat.jsp</jsp-file>
+</servlet>
+<servlet>
+    <servlet-name>amaty1</servlet-name>
+    <jsp-file>/amaty1.jsp</jsp-file>
+</servlet>
+<servlet>
+    <servlet-name>calcula1</servlet-name>
+    <jsp-file>/calcula1.jsp</jsp-file>
+</servlet>
+<!-- Servlet Mapping for LoadModule CALCULAT -->
+<servlet-mapping>
+    <servlet-name>CALCULATServletManager</servlet-name>
+    <url-pattern>/CALCULATServletManager</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>calculat</servlet-name>
+    <url-pattern>/calculat</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>calculat</servlet-name>
+    <url-pattern>/calculat.jsp/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>amaty1</servlet-name>
+    <url-pattern>/amaty1</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>amaty1</servlet-name>
+    <url-pattern>/amaty1.jsp/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>calcula1</servlet-name>
+    <url-pattern>/calcula1</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>calcula1</servlet-name>
+    <url-pattern>/calcula1.jsp/*</url-pattern>
+</servlet-mapping>

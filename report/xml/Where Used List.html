@@ -1,0 +1,14 @@
+<HTML>
+  <XML id="source" src="Where Used list.xml"></XML>
+  <XML id="style" src="Where Used list.xsl"></XML>
+  
+  <HEAD>
+    <TITLE>CA Gen Report</TITLE>
+ </HEAD>
+
+  <SCRIPT FOR="window" EVENT="onload">
+    xslTarget.innerHTML = source.transformNode(style.XMLDocument);
+  </SCRIPT>
+  <BODY id="xslTarget">
+  </BODY>
+</HTML>

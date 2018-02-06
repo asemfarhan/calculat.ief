@@ -1,0 +1,132 @@
+
+
+<!-- File created Sun Apr  9 21:24:06 2017 -->
+
+:application
+  name=CAL.
+
+  :permval_sets.
+
+    :permval_set
+      name=PVAL_3600074_FLAG
+      permval='N'
+      permval='Y'.
+
+    :permval_set
+      name=PVAL_360009F_DROP_LIST1
+      permval='+'
+      permval='-'
+      permval='E'
+      permval='D'.
+
+  :epermval_sets.
+
+  :step
+    name=CALCULAT_WIN
+    winctrl-sets-command=PLUS
+    winctrl-sets-command=MINS
+    winctrl-sets-command=CLEAR.
+
+    :entity-view
+      view-name=EXPORT_RESULT
+      entity-name=IEF_SUPPLIED.
+
+      :attribute
+        name=RESULT
+        type=INTEGER
+        length=8.
+
+    :eentity-view.
+
+    :entity-view
+      view-name=EXPORT_N2ND
+      entity-name=IEF_SUPPLIED.
+
+      :attribute
+        name=NUMBER2
+        type=INTEGER
+        length=5.
+
+    :eentity-view.
+
+    :entity-view
+      view-name=EXPORT_N1
+      entity-name=IEF_SUPPLIED.
+
+      :attribute
+        name=NUMBER1ST
+        type=INTEGER
+        length=8.
+
+    :eentity-view.
+
+  :estep.
+
+  :step
+    name=AMATY
+    winctrl-sets-command=ENTER
+    winctrl-sets-command=PLUS
+    winctrl-sets-command=MINS
+    winctrl-sets-command=RETURN.
+
+    :entity-view
+      view-name=EXPORT_AMATY
+      entity-name=AMATY.
+
+      :attribute
+        name=DROP_LIST1
+        type=TEXT
+        length=1
+        permval_set=PVAL_360009F_DROP_LIST1.
+
+    :eentity-view.
+
+    :entity-view
+      view-name=OUT_DEMO_TEXT
+      entity-name=DEMO_TEXT_1111.
+
+      :attribute
+        name=TEXT1111
+        type=TEXT
+        length=100.
+
+    :eentity-view.
+
+    :entity-view
+      view-name=OUT_RESULT
+      entity-name=IEF_SUPPLIED.
+
+      :attribute
+        name=RESULT
+        type=INTEGER
+        length=8.
+
+    :eentity-view.
+
+    :entity-view
+      view-name=OUT_N1
+      entity-name=IEF_SUPPLIED.
+
+      :attribute
+        name=TOTAL_REAL
+        type=DECIMAL
+        length=17.
+
+    :eentity-view.
+
+    :entity-view
+      view-name=OUT_TITLE_ALL
+      entity-name=CALCULAT_NAME.
+
+      :attribute
+        name=ALLLLLLL
+        type=TEXT
+        length=200.
+
+    :eentity-view.
+
+  :estep.
+
+:eapplication.
+
+<!-- Creation took 0 secs -->

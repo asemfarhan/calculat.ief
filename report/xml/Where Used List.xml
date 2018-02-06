@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<Report>
+<title>Where Used List</title>
+<modelname>CALCULAT</modelname>
+<subset>(complete model)</subset>
+<datetime>Nov. 25, 2016  03:09</datetime>
+ <TATTRUSR  NAME="ENTRY1">
+  <TBUSPRST  NAME="AMATY" />
+ </TATTRUSR>
+</Report>

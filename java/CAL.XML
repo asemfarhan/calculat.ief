@@ -1,0 +1,132 @@
+﻿<!-- CA Gen Generated makefile for CAL -->
+<!-- Copyright (C) 2016 CA. All rights reserved. -->
+<project name="CAL"
+         default="all"
+         basedir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\">
+<taskdef name="fileexists" classname="com.ca.gen.bt.tasks.FileExists"/>
+<taskdef name="validategenxml" classname="com.ca.gen.bt.tasks.ValidateGenXml"/>
+<path id="classpath.base">
+  <pathelement location="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CASCADE"/>
+  <pathelement location="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CAL"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/ejbrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/wsrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/vwrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/odc.ejbrmi.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/odc.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/abrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/fmrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/wmrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes/smrt.jar"/>
+  <pathelement location="C:\Program Files (x86)\CA\Gen86Free\gen\classes"/>
+  <pathelement location="C:\Program Files (x86)\CA\SharedComponents\JRE/lib/javaee.jar"/>
+</path>
+<target name="all" depends="dirs,build,jar" />
+<target name="dirs">
+    <delete dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CAL"/>
+    <mkdir dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CAL"/>
+</target>
+<target name="build" depends="build.eab,build.ab,build.ps,build.sub,build.lm"/>
+<target name="build.eab">
+</target>
+<target name="build.ab">
+</target>
+<target name="build.ps">
+<!-- Procedure Step Classes -->
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CAL"/>
+      <arg value="Verifying Procedure Step Classes"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Verifying Procedure Step Classes"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\HOME.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\HOME_IA.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\HOME_OA.java"/>
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CAL"/>
+      <arg value="Compiling Procedure Step Classes"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Compiling Procedure Step Classes"/>
+   <javac srcdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\"
+          destdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CAL"
+          includes="
+                    calculat\HOME.java,
+                    calculat\HOME_IA.java,
+                    calculat\HOME_OA.java,
+                    calculat\package-info.java
+         "
+         encoding="UTF-8"
+         target="1.6"
+         source="1.6"
+         classpathref="classpath.base" />
+</target>
+<target name="build.sub">
+<!-- Subordinate Classes -->
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CAL"/>
+      <arg value="Verifying Subordinate Classes"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Verifying Subordinate Classes"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CAL/FlowTables\CALCULAT_WIN.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CAL/ProcedureSteps\CALCULAT_WIN.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CAL/Windows\CALCULAT_WIN.java"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CAL\ServletManager.java"/>
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CAL"/>
+      <arg value="Compiling Subordinate Classes"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Compiling Subordinate Classes"/>
+   <javac srcdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\"
+          destdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CAL"
+          includes="
+                    calculat/CAL/FlowTables\CALCULAT_WIN.java,
+                    calculat/CAL/ProcedureSteps\CALCULAT_WIN.java,
+                    calculat/CAL/Windows\CALCULAT_WIN.java,
+                    calculat/CAL\ServletManager.java,
+         "
+         encoding="UTF-8"
+         target="1.6"
+         source="1.6"
+         classpathref="classpath.base" />
+</target>
+<target name="build.lm">
+<!-- Load Module Class -->
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CAL"/>
+      <arg value="Verifying Load Module Class"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Verifying Load Module Class"/>
+   <fileexists filename="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat/CAL/LoadModule.java"/>
+   <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+      <arg value="CAL"/>
+      <arg value="Compiling Load Module Class"/>
+   </exec>
+   <echo message=""/>
+   <echo message="...Compiling Load Module Class"/>
+   <javac srcdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\"
+          destdir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes/CAL"
+          includes="calculat/CAL/LoadModule.java"
+         encoding="UTF-8"
+         target="1.6"
+         source="1.6"
+         classpathref="classpath.base" />
+</target>
+<target name="jar">
+<!-- C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CAL\CAL.jar -->
+ <exec executable="C:\Program Files (x86)\CA\Gen86Free\gen\instmsgj">
+    <arg value="CAL"/>
+    <arg value="Building CAL\CAL.jar"/>
+ </exec>
+ <echo message=""/>
+ <echo message="...Building CAL\CAL.jar"/>
+ <delete file="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CAL\CAL.jar"
+         quiet="true"/>
+ <jar duplicate="preserve" jarfile="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CAL\CAL.jar">
+     <fileset dir="C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CAL"
+              includes="**\*.class"/>
+ </jar>
+</target>
+</project>

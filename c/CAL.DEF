@@ -1,0 +1,6 @@
+; Generated Def file for CAL
+LIBRARY         CAL
+; CA Gen Generated DLL.  Copyright (C) 2016 CA. All rights reserved.
+HEAPSIZE        8192,8192
+EXPORTS
+     win_head   @1

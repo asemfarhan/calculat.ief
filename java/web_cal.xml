@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Servlet Definition for LoadModule CAL -->
+<servlet>
+    <servlet-name>CALServletManager</servlet-name>
+    <servlet-class>calculat.CAL.ServletManager</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>cal</servlet-name>
+    <jsp-file>/cal.jsp</jsp-file>
+</servlet>
+<servlet>
+    <servlet-name>calculat</servlet-name>
+    <jsp-file>/calculat.jsp</jsp-file>
+</servlet>
+<!-- Servlet Mapping for LoadModule CAL -->
+<servlet-mapping>
+    <servlet-name>CALServletManager</servlet-name>
+    <url-pattern>/CALServletManager</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>cal</servlet-name>
+    <url-pattern>/cal</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>cal</servlet-name>
+    <url-pattern>/cal.jsp/*</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>calculat</servlet-name>
+    <url-pattern>/calculat</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>calculat</servlet-name>
+    <url-pattern>/calculat.jsp/*</url-pattern>
+</servlet-mapping>

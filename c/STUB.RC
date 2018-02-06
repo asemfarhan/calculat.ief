@@ -1,0 +1,5 @@
+/* Copyright (C) 2016 CA. All rights reserved. */
+#include "application.h"
+#include "CAL_buildver.h"
+#include "C:\Program Files (x86)\CA\Gen86Free\gen\version\generic.rc"
+RCID_123_GUI_STUB ICON DISCARDABLE PRELOAD defaultw.ico

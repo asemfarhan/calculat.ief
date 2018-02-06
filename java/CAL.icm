@@ -1,0 +1,118 @@
+:execdef
+        user=mansour
+        date=2016/11/25
+        time=02:44:26
+        os=NT.
+
+:source
+        model='CALCULAT'
+        subset='ALL'
+        dateup=0000/00/00
+        timeup=00:00
+        saved=NO
+        schema=9.2.A6
+        level=9.2.A6.01
+        localmodel=calculat
+        codepage=1252
+        isoencoding=UTF-8.
+:esource.
+
+:systems
+        techsys=CALCULAT
+        source=C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\
+        bitmap=C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\bitmap\
+        ole=C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\ole\.
+:esystems.
+
+:execunit
+        member=CAL
+        language=JAVA
+        os=JVM
+        execenv=INTERNET
+        dbms=JDBC
+        isolation=CS
+        profile=SQL
+        format=BYPASS
+        dbname=IEFDB
+        cascade=CASCADE
+        dialectdir=LEFTDIR
+        applguid={94879671-327C-4357-A6EB-B157EA5908A5}
+        xmlfile=web_cal.xml
+        package=calculat/CAL.
+
+:pstep
+        member=HOME
+        name=CALCULAT_WIN
+        techsys=CALCULAT
+        dlgtran=CALCULAT
+        clrtran=CALCULAT
+        sql=NO
+        create=NO
+        update=NO
+        delete=NO
+        test=YES
+        nondial=''
+        publicimportview=CalculatWinImport
+        publicexportview=CalculatWinExport
+        importviewname=HOME_IA
+        exportviewname=HOME_OA
+        package=calculat.
+:epstep.
+
+:css
+        file=CALCULAT.css.
+:ecss.
+
+:html
+        file=cal.jsp.
+:ehtml.
+
+:html
+        file=calculat.jsp.
+:ehtml.
+
+:html
+        file=CALCULAT_WIN.html.
+:ehtml.
+
+:html
+        file=CALCULAT_WIN.js.
+:ehtml.
+
+:html
+        file=cal_help.html.
+:ehtml.
+
+:subordinate
+        member=CALCULAT_WIN
+        file=CALCULAT_WIN
+        package=calculat/CAL/FlowTables.
+:esubordinate.
+
+:subordinate
+        member=CALCULAT_WIN
+        file=CALCULAT_WIN
+        package=calculat/CAL/ProcedureSteps.
+:esubordinate.
+
+:subordinate
+        member=CALCULAT_WIN
+        file=CALCULAT_WIN
+        package=calculat/CAL/Windows.
+:esubordinate.
+
+:subordinate
+        member=ServletManager
+        file=ServletManager
+        package=calculat/CAL.
+:esubordinate.
+
+    :lmreference
+        type=CLIENT
+        name=CAL
+    :elmreference
+
+:eexecunit.
+
+:eexecdef.
+

@@ -1,0 +1,76 @@
+
+CA Gen Build Tool Compose
+Copyright (c) 2016 CA. All rights reserved.
+
+
+Compose Succeeded
+
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Program Files (x86)\CA\Gen86Free\Gen>"C:\Program Files (x86)\CA\SharedComponents\JRE\1.8.0_60\\bin\java.exe "   -classpath "C:\Program Files (x86)\CA\Gen86Free\gen\bt\bt.jar" com.ca.gen.bt.Execute  "C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\CAL.bat"
+
+=====================Load Module Script Environment=================
+Operating System: JVM
+Environment:      INTERNET
+Language:         java
+Codepage:         1252
+ISOEncoding:      UTF-8
+
+==============================SUMMARY===============================
+Summary of Load Module Script Results for Load Module CAL:
+==============================LEGEND================================
+Legend: ... precedes information about an operation to be performed.
+        --- precedes results from an operation which just completed.
+        *** precedes error info from an operation which just failed.
+        (Symbols preceding info are indented to convey step levels.)
+
+==============================DETAILS===============================
+Details of CAL Load Module Script Results:
+.;C:\Program Files (x86)\CA\Gen86Free\gen\bt\bt.jar;C:\Program Files (x86)\Java\jdk1.7.0_40\lib\tools.jar
+Buildfile: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\CAL.XML
+
+dirs:
+    [mkdir] Created dir: C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CAL
+
+build.eab:
+
+build.ab:
+
+build.ps:
+     [echo] 
+     [echo] ...Verifying Procedure Step Classes
+     [echo] 
+     [echo] ...Compiling Procedure Step Classes
+    [javac] C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\CAL.XML:61: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 4 source files to C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CAL
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+build.sub:
+     [echo] 
+     [echo] ...Verifying Subordinate Classes
+
+     [echo] 
+     [echo] ...Compiling Subordinate Classes
+    [javac] C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\CAL.XML:92: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 4 source files to C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\classes\CAL
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\calculat\CAL\ServletManager.java:40: error: cannot access HttpServlet
+    [javac] public class ServletManager extends com.ca.gen.smrt.ServletManager
+    [javac]        ^
+    [javac]   class file for javax.servlet.http.HttpServlet not found
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 error
+    [javac] 1 warning
+
+BUILD FAILED
+C:\Users\mansour\Documents\CA\Gen 8.6\Models\calculat.ief\java\CAL.XML:92: Compile failed; see the compiler error output for details.
+
+Total time: 4 seconds
+IEFSIGNAL:FAIL
+*** Build for Load Module CAL Failed. ***
+Important!  Review above for any errors.
+
+C:\Program Files (x86)\CA\Gen86Free\Gen>

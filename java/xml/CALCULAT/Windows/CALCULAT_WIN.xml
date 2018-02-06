@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+                              CA Gen 8.6
+       Copyright (c) 2016 CA Technologies. All rights reserved. 
+    Model Name:  CALCULAT
+    Load Mod:    CALCULAT                  Date: 16/11/23
+    Target OS:   JVM                       Time: 04:51:32
+    Target DBMS: JDBC                      User: mansour
+    Target GUI:  Web View                 
+    Dialect:     DEFAULT                  
+-->
+<WindowData Name="CALCULAT_WIN" Id="104" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:gdt="http://www.ca.com/gen/GenDataTypes" xmlns="http://www.ca.com/gen/Window"
+ xsi:schemaLocation="http://www.ca.com/gen/Window urn:Window.xsd">
+    <PstepId>102</PstepId>
+    <LoadModuleName>CALCULAT</LoadModuleName>
+    <Dialect>DEFAULT</Dialect>
+    <Culture></Culture>
+    <WindowProperties Type="S" Modality="A" Position="S" Sysmenu="Y" Maximize="Y" Minimize="Y" >
+        <Presentation X="187" Y="176" Width="520" Height="135" FontType="System" FontSize="10" FontStyle="B" ForegroundColor="000000" BackgroundColor="d4d0c8" />
+    </WindowProperties>
+    <Title>ASER CALCULAT</Title>
+    <HtmlfileName>CALCULAT_WIN</HtmlfileName>
+    <InputWindowMap Identifier="win_IN_12700000_CALCULAT_WIN" SrcView="calculat.HOME_IA" >
+        <gdt:WindowEntityView ControlId="109" ViewName="ImportN1IefSuppliedNumber1st" ViewType="DoubleAttr" ViewLength="8" />
+        <gdt:WindowEntityView ControlId="113" ViewName="ImportN2ndIefSuppliedNumber2" ViewType="DoubleAttr" ViewLength="8" />
+        <gdt:WindowEntityView ControlId="116" ViewName="ImportResultIefSuppliedResult" ViewType="DoubleAttr" ViewLength="15" />
+    </InputWindowMap>
+    <OutputWindowMap Identifier="win_OUT_12700000_CALCULAT_WIN" SrcView="calculat.HOME_OA" >
+        <gdt:WindowEntityView ControlId="109" ViewName="ExportN1IefSuppliedNumber1st" ViewType="DoubleAttr" ViewLength="8" ViewNameAT="ExportN1IefSuppliedNumber1st_AT" />
+        <gdt:WindowEntityView ControlId="113" ViewName="ExportN2ndIefSuppliedNumber2" ViewType="DoubleAttr" ViewLength="8" ViewNameAT="ExportN2ndIefSuppliedNumber2_AT" />
+        <gdt:WindowEntityView ControlId="116" ViewName="ExportResultIefSuppliedResult" ViewType="DoubleAttr" ViewLength="15" ViewNameAT="ExportResultIefSuppliedResult_AT" />
+    </OutputWindowMap>
+    <ControlList>
+        <ControlData Type="SingleLineEdit" Id="109" Name="Number1" TabIndex="1" >
+            <Presentation X="232" Y="18" Width="55" Height="11" />
+            <SingleLineEditAttributes EditAlign="D" AutoScroll="N" PassWord=" " MarginBox="Y" ReadOnly="N" AutoTab="N" />
+            <Prompt>
+                <Presentation X="184" Y="19" Width="43" Height="12" />
+                <PromptAttributes String="Number1:" />
+            </Prompt>
+            <Domain DisplayFieldLength="10" DomainType="B" FldLength="8" FldDecimal="2" EditPattern="" PermittedValue="" InputRequired="0" UpperCased="0" DefaultValue="" />
+        </ControlData>
+        <ControlData Type="Button" Id="111" Name="plus" TabIndex="2" >
+            <Presentation X="347" Y="23" Width="46" Height="16" />
+            <ButtonAttributes Caption="+" />
+            <EventList>
+                <gdt:Event ControlId="111" EventType="Click" EventHandler="home_calculat_na_pb_click01" MapFlag=" " OleFlag="0" >
+                </gdt:Event>
+            </EventList>
+            <Command Value="PLUS" CommandRcid="111" CommandType="0" />
+        </ControlData>
+        <ControlData Type="Button" Id="112" Name="mins" TabIndex="3" >
+            <Presentation X="395" Y="23" Width="47" Height="16" />
+            <ButtonAttributes Caption="-" />
+            <EventList>
+                <gdt:Event ControlId="112" EventType="Click" EventHandler="home_calculat_min_pb_click03" MapFlag=" " OleFlag="0" >
+                </gdt:Event>
+            </EventList>
+            <Command Value="MINS" CommandRcid="112" CommandType="0" />
+        </ControlData>
+        <ControlData Type="SingleLineEdit" Id="113" Name="Number2" TabIndex="4" >
+            <Presentation X="232" Y="36" Width="55" Height="11" />
+            <SingleLineEditAttributes EditAlign="D" AutoScroll="N" PassWord=" " MarginBox="Y" ReadOnly="N" AutoTab="N" />
+            <Prompt>
+                <Presentation X="184" Y="36" Width="44" Height="12" />
+                <PromptAttributes String="Number2:" />
+            </Prompt>
+            <Domain DisplayFieldLength="10" DomainType="B" FldLength="8" FldDecimal="2" EditPattern="" PermittedValue="" InputRequired="0" UpperCased="0" DefaultValue="" />
+        </ControlData>
+        <ControlData Type="Button" Id="115" Name="multiply" TabIndex="5" >
+            <Presentation X="372" Y="44" Width="47" Height="16" />
+            <ButtonAttributes Caption="*" />
+            <EventList>
+                <gdt:Event ControlId="115" EventType="Click" EventHandler="home_calculat_wi_pb_multip_cl04" MapFlag=" " OleFlag="0" >
+                </gdt:Event>
+            </EventList>
+            <Command Value="" CommandRcid="115" CommandType="0" />
+        </ControlData>
+        <ControlData Type="SingleLineEdit" Id="116" Name="Field1" TabIndex="6" >
+            <Presentation X="203" Y="57" Width="100" Height="11" />
+            <SingleLineEditAttributes EditAlign="D" AutoScroll="N" PassWord="N" MarginBox="Y" ReadOnly="Y" AutoTab="N" />
+            <Prompt>
+                <Presentation X="168" Y="58" Width="30" Height="12" />
+                <PromptAttributes String="result:" />
+            </Prompt>
+            <Domain DisplayFieldLength="17" DomainType="B" FldLength="15" FldDecimal="2" EditPattern="" PermittedValue="" InputRequired="0" UpperCased="0" DefaultValue="" />
+        </ControlData>
+        <ControlData Type="Button" Id="118" Name="Button1" TabIndex="7" >
+            <Presentation X="233" Y="88" Width="46" Height="16" />
+            <ButtonAttributes Caption="Clear" />
+            <EventList>
+                <gdt:Event ControlId="118" EventType="Click" EventHandler="home_calculat_na_pb_clear_cli02" MapFlag=" " OleFlag="0" >
+                </gdt:Event>
+            </EventList>
+            <Command Value="CLEAR" CommandRcid="118" CommandType="0" />
+        </ControlData>
+        <ControlData Type="Button" Id="104" Name="CALCULAT_WINCLOSE" >
+            <Presentation X="508" Y="0" Width="13" Height="11" />
+            <ButtonAttributes Caption="X" />
+            <Command Value="" CommandRcid="104" CommandType="2" />
+        </ControlData>
+    </ControlList>
+</WindowData>
